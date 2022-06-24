@@ -3,7 +3,7 @@
 class UserStorage {
   loginUser(id, password, onSuccess, onError) {
     setTimeout(() => {
-      if (id == "ellie" && password == "dream") {
+      if (id === "ellie" && password === "dream") {
         onSuccess(id);
       } else {
         onError(new Error("user not found"));
